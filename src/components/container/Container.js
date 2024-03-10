@@ -4,11 +4,11 @@ import React, { useState } from "react";
 function Container() {
   const [count, setCount] = useState(0);
 
-  function countMinus() {
+  function decreaseCount() {
     setCount(count - 1);
   }
 
-  function countPlus() {
+  function increaseCount() {
     setCount(count + 1);
   }
 
@@ -20,21 +20,19 @@ function Container() {
     <div className="container">
       <div className="main">
         <div>
-          <button onClick={countMinus} className="click">
+          <button onClick={decreaseCount} className="btn font_size_80">
             -
           </button>
         </div>
-        <div id="changenumber" className="count">
-          {count}
-        </div>
+        <div className="font_size_80">{count}</div>
         <div>
-          <button onClick={countPlus} className="click">
+          <button onClick={increaseCount} className="btn font_size_80">
             +
           </button>
         </div>
       </div>
-      <div className="reset">
-        <button onClick={reset} id="clear" className="clickReset">
+      <div className="reset_container">
+        <button onClick={reset} className="btn_reset">
           RESET
         </button>
       </div>

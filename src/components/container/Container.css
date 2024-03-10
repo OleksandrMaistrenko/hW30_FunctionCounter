@@ -4,24 +4,22 @@
 
 .main {
   height: 500px;
-
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.click {
+.btn {
   width: 150px;
   height: 100px;
+}
+.font_size_80 {
   font-size: 80px;
 }
-.count {
-  font-size: 80px;
-}
-.reset {
+.reset_container {
   text-align: center;
 }
-.clickReset {
+.btn_reset {
   width: 300px;
   height: 100px;
 }
