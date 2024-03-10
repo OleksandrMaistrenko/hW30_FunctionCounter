@@ -1,0 +1,27 @@
+.container {
+  height: 100vh;
+}
+
+.main {
+  height: 500px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.click {
+  width: 150px;
+  height: 100px;
+  font-size: 80px;
+}
+.count {
+  font-size: 80px;
+}
+.reset {
+  text-align: center;
+}
+.clickReset {
+  width: 300px;
+  height: 100px;
+}
