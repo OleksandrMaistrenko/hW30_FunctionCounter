@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 function Container() {
   const [count, setCount] = useState(0);
-
+  const buttonStyle = { backgroundColor: "lightgreen" };
   function decreaseCount() {
     setCount(count - 1);
   }
@@ -31,11 +31,13 @@ function Container() {
           </button>
         </div>
       </div>
-      <div className="reset_container">
-        <button onClick={reset} className="btn_reset">
-          RESET
-        </button>
-      </div>
+      {!!count && (
+        <div className="reset_container">
+          <button onClick={reset} className="btn_reset" style={buttonStyle}>
+            RESET
+          </button>
+        </div>
+      )}
     </div>
   );
 }
